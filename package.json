@@ -1,9 +1,9 @@
 {
-  "name": "package-name-to-fill",
+  "name": "{{PROJECT_NAME}}",
   "version": "0.0.1",
-  "description": "Description TO FILL",
-  "productName": "App Name TO FILL",
-  "author": "David Chhang <david.chhang@gmail.com>",
+  "description": "{{DESCRIPTION}}",
+  "productName": "{{APP NAME}}",
+  "author": "{{AUTHOR}}",
   "type": "module",
   "private": true,
   "scripts": {
