@@ -3,7 +3,7 @@
 
 import { defineConfig } from '#q-app/wrappers';
 
-export default defineConfig((/* ctx */) => {
+export default defineConfig((ctx) => {
   return {
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
@@ -17,7 +17,7 @@ export default defineConfig((/* ctx */) => {
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
     css: [
-      'app.scss'
+      './../../node_modules/tailwindcss/tailwind.css','app.scss'
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
@@ -65,7 +65,7 @@ export default defineConfig((/* ctx */) => {
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
-      
+
       vitePlugins: [
         ['vite-plugin-checker', {
           vueTsc: true,
@@ -80,7 +80,17 @@ export default defineConfig((/* ctx */) => {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
     devServer: {
       // https: true,
-      open: true // opens browser window automatically
+      /* open: true, // opens browser window automatically */
+      port:
+        'spa' in ctx.mode
+          ? 8000
+          : 'pwa' in ctx.mode
+            ? 9000
+            : 'capacitor' in ctx.mode
+              ? 9100
+              : 'ssr' in ctx.mode
+                ? 9200
+                : 9090,
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework
