@@ -1,0 +1,5 @@
+{
+  "appId": "{{CAPACITOR APPID}}",
+  "appName": "{{APP NAME}}",
+  "webDir": "www"
+}
