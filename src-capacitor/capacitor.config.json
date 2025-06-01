@@ -1,5 +1,6 @@
 {
   "appId": "{{CAPACITOR APPID}}",
   "appName": "{{APP NAME}}",
-  "webDir": "www"
+  "webDir": "../dist/spa",
+  "bundledWebRuntime": false
 }
