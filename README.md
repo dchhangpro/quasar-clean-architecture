@@ -1,12 +1,9 @@
-# {{PROJECT_NAME}}
+# Boilerplate Quasar Clean
 
-Créé par {{AUTHOR}}. Avec l'aide du boilerplate Clean Quasar.
+## Installation
+Installeur bientôt disponible...
 
-### Build l'app bundle pour import sur la Google Play Console
-
-Changer le numéro de version et le versionCode
-
-# 🧠 Architecture de l'application
+## 🧠 Architecture de l'application
 
 Ce projet suit les principes de la **Clean Architecture**, adaptée à une application Vue.js avec une séparation claire entre la logique métier, l'interface utilisateur et les dépendances externes. L'objectif est de garantir une architecture **modulaire, testable, évolutive** et **facilement maintenable**.
 
